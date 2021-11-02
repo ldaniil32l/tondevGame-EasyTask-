@@ -1,0 +1,92 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"hit","type":"uint256"},
+				{"name":"defence","type":"uint256"},
+				{"name":"health","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "checkHit",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "checkDefence",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "checkHealth",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "attackEnemy",
+			"inputs": [
+				{"name":"militaryUnit","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getAttack",
+			"inputs": [
+				{"name":"valueDamage","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getEnemyAddress",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"address"}
+			]
+		},
+		{
+			"name": "militaryUnit",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"health","type":"uint256"},{"name":"hit","type":"uint256"},{"name":"defence","type":"uint256"}],"name":"militaryUnit","type":"tuple"}
+			]
+		},
+		{
+			"name": "enemy",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"enemy","type":"address"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"components":[{"name":"health","type":"uint256"},{"name":"hit","type":"uint256"},{"name":"defence","type":"uint256"}],"name":"militaryUnit","type":"tuple"},
+		{"name":"enemy","type":"address"}
+	]
+}
